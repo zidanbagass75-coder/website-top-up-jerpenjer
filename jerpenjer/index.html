@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jerpenjer Store - Top Up Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+    nav {
+      background: #34495e;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .game-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+      padding: 20px;
+    }
+    .game-info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .game-card img {
+      max-width: 120px;
+      border-radius: 10px;
+    }
+    .game-details h2 {
+      margin: 0;
+      color: #34495e;
+    }
+    .topup-options {
+      margin-top: 15px;
+    }
+    .topup-options select, 
+    .topup-options button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 5px 5px 0 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .topup-options button {
+      background: #27ae60;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    .topup-options button:hover {
+      background: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Jerpenjer Store</h1>
+    <p>Top Up Game Favoritmu dengan Mudah, Aman & Cepat 🚀</p>
+  </header>
+
+  <nav>
+    <a href="#ml">Mobile Legends</a>
+    <a href="#ff">Free Fire</a>
+    <a href="#pubg">PUBG</a>
+    <a href="#valorant">Valorant</a>
+    <a href="#genshin">Genshin</a>
+    <a href="#lainnya">Lainnya</a>
+  </nav>
+
+  <div class="container">
+
+    <!-- Mobile Legends -->
+    <div class="game-card" id="ml">
+      <div class="game-info">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/35/Mobile_Legends_Bang_Bang_logo.png" alt="Mobile Legends">
+        <div class="game-details">
+          <h2>Mobile Legends</h2>
+          <p>Masukkan ID & Server:</p>
+          <input type="text" placeholder="Contoh: 123456 (1234)" style="padding:10px; width:100%; border-radius:8px; border:1px solid #ccc;">
+        </div>
+      </div>
+      <div class="topup-options">
+        <select>
+          <option>Pilih Nominal</option>
+          <option>86 Diamonds - Rp20.000</option>
+          <option>172 Diamonds - Rp40.000</option>
+          <option>257 Diamonds - Rp60.000</option>
+          <option>514 Diamonds - Rp120.000</option>
+          <option>1000 Diamonds - Rp230.000</option>
+        </select>
+        <button>Beli Sekarang</button>
+      </div>
+    </div>
+
+    <!-- Free Fire -->
+    <div class="game-card" id="ff">
+      <div class="game-info">
+        <img src="https://seeklogo.com/images/F/free-fire-logo-6E807B9D0F-seeklogo.com.png" alt="Free Fire">
+        <div class="game-details">
+          <h2>Free Fire</h2>
+          <p>Masukkan ID Player:</p>
+          <input type="text" placeholder="Contoh: 123456789" style="padding:10px; width:100%; border-radius:8px; border:1px solid #ccc;">
+        </div>
+      </div>
+      <div class="topup-options">
+        <select>
+          <option>Pilih Nominal</option>
+          <option>70 Diamonds - Rp10.000</option>
+          <option>140 Diamonds - Rp20.000</option>
+          <option>355 Diamonds - Rp50.000</option>
+          <option>720 Diamonds - Rp100.000</option>
+          <option>1450 Diamonds - Rp200.000</option>
+        </select>
+        <button>Beli Sekarang</button>
+      </div>
+    </div>
+
+    <!-- PUBG Mobile -->
+    <div class="game-card" id="pubg">
+      <div class="game-info">
+        <img src="https://seeklogo.com/images/P/pubg-mobile-logo-91B4A32C62-seeklogo.com.png" alt="PUBG Mobile">
+        <div class="game-details">
+          <h2>PUBG Mobile</h2>
+          <p>Masukkan ID Player:</p>
+          <input type="text" placeholder="Contoh: 1234567890" style="padding:10px; width:100%; border-radius:8px; border:1px solid #ccc;">
+        </div>
+      </div>
+      <div class="topup-options">
+        <select>
+          <option>Pilih Nominal</option>
+          <option>60 UC - Rp15.000</option>
+          <option>325 UC - Rp75.000</option>
+          <option>660 UC - Rp150.000</option>
+          <option>1800 UC - Rp400.000</option>
+        </select>
+        <button>Beli Sekarang</button>
+      </div>
+    </div>
+
+    <!-- Valorant -->
+    <div class="game-card" id="valorant">
+      <div class="game-info">
+        <img src="https://seeklogo.com/images/V/valorant-logo-FAB2CA0E55-seeklogo.com.png" alt="Valorant">
+        <div class="game-details">
+          <h2>Valorant</h2>
+          <p>Masukkan Riot ID:</p>
+          <input type="text" placeholder="Contoh: Nama#1234" style="padding:10px; width:100%; border-radius:8px; border:1px solid #ccc;">
+        </div>
+      </div>
+      <div class="topup-options">
+        <select>
+          <option>Pilih Nominal</option>
+          <option>475 VP - Rp50.000</option>
+          <option>1000 VP - Rp100.000</option>
+          <option>2050 VP - Rp200.000</option>
+          <option>5350 VP - Rp500.000</option>
+        </select>
+        <button>Beli Sekarang</button>
+      </div>
+    </div>
+
+    <!-- Genshin Impact -->
+    <div class="game-card" id="genshin">
+      <div class="game-info">
+        <img src="https://seeklogo.com/images/G/genshin-impact-logo-6E6F1EAB54-seeklogo.com.png" alt="Genshin Impact">
+        <div class="game-details">
+          <h2>Genshin Impact</h2>
+          <p>Masukkan UID:</p>
+          <input type="text" placeholder="Contoh: 700123456" style="padding:10px; width:100%; border-radius:8px; border:1px solid #ccc;">
+        </div>
+      </div>
+      <div class="topup-options">
+        <select>
+          <option>Pilih Nominal</option>
+          <option>60 Crystals - Rp15.000</option>
+          <option>300 Crystals - Rp75.000</option>
+          <option>980 Crystals - Rp225.000</option>
+          <option>1980 Crystals - Rp450.000</option>
+        </select>
+        <button>Beli Sekarang</button>
+      </div>
+    </div>
+
+    <!-- Tambahkan game lain (Roblox, CODM, Higgs Domino, FIFA, Apex, Wild Rift, dll) pakai format yang sama -->
+
+  </div>
+
+</body>
+</html>
